@@ -1,13 +1,14 @@
 import "./App.css";
-import ScrollToTop from "./utils/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Routes>
-        <Route path="/" element={<>you're here</>} />
+        <Route path="/" element={<SignUp/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
   );
