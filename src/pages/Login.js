@@ -1,6 +1,7 @@
 import CreateAccNav from "../components/CreateAcctNav"
 import "../styles/Login.css"
 import AcctForm from "../components/AcctForm";
+import Footer from "../components/Footer";
 
 
 
@@ -27,6 +28,7 @@ function Login() {
             recaptcha={true}
           />
         </div>
+        <Footer/>
       </div>
     </div>
   )
