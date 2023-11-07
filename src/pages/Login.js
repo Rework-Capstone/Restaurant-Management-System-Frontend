@@ -28,7 +28,6 @@ function Login() {
             recaptcha={true}
           />
         </div>
-        <Footer/>
       </div>
     </div>
   )
