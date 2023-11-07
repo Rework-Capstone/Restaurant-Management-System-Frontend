@@ -6,7 +6,7 @@ function CreateAccNav(props) {
 
   const{AcctText, AcctBtn} = props
 
-  const path = AcctBtn.toLowerCase() === 'sign up' ? '/' : '/login';
+  const path = AcctBtn.toLowerCase() === 'sign up' ? '/' : '/auth/login';
 
 
   return (
