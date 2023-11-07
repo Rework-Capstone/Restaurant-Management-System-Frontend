@@ -1,0 +1,59 @@
+.signUpMainDiv{
+  display: flex;
+  overflow-y: auto;
+  background-color: #fafbfc;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.signUp_page_main{
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.signUp_page_main_bg{
+  position: absolute;
+  height: calc(100% - 17vh);
+  width: 100%;
+  top: 17vh;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: url(../assets/images/login__bg.8e44616319b55ac1.svg) center 10px no-repeat;
+  background-size: cover;
+}
+
+.signUp_page_main_bg::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200%;
+  height: 300%;
+  top: -100%;
+  left: -50%;
+  background: url(../assets/images/login__bg-dots.4777a8eaedc1248b.svg);
+  transform: rotate(-28deg);
+  pointer-events: none;
+}
+
+.signUp_page_main_bg::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../assets/images/login__bg-top.f55110285bf7cd54.svg) center top no-repeat;
+  pointer-events: none;
+}
+
+
+
