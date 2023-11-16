@@ -29,6 +29,7 @@ function Login() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
