@@ -1,4 +1,5 @@
 import "./App.css";
+import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
@@ -12,13 +13,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/menu" element={<MenuPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blogDetails" element={<BlogDetails />} />
-        <Route path="/booktable" element={<BookATable />} />
-        <Route path="/contactus" element={<ContactUsPage />} />
+        <Route path="/" element={<SignUp/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
   );
