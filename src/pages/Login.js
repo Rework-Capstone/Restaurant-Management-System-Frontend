@@ -3,7 +3,6 @@ import "../styles/Login.css"
 import AcctForm from "../components/AcctForm";
 
 
-
 function Login() {
   return (
     <div>
@@ -28,7 +27,6 @@ function Login() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

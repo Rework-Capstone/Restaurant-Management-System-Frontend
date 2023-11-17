@@ -3,19 +3,26 @@ import menuImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
 
 
 
-function MenuCard() {
+function MenuCard(props) {
+
+  const {
+    image,
+    price,
+    product,
+    title
+  } = props;
 
   return (
     <div>
       <div className="menuCard_main">
         <div className="menuCard_img">
-          <img src={menuImg1} alt="" />
+          <img src={image} alt="" />
         </div>
         <div className="menuCard_txt">
-          <h3 className="menuCard_price">$ 9.99</h3>
-          <p className="menuCard_product">Fried Eggs</p>
+          <h3 className="menuCard_price">{price}</h3>
+          <p className="menuCard_product">{product}</p>
           <span className="menuCard_ingredients">
-            Made With eggs, lettuce, salt, oil and other ingredients.
+            {title}
           </span>
         </div>
       </div>

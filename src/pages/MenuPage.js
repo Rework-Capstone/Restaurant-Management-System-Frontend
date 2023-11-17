@@ -10,12 +10,43 @@ import menuimg7 from "../assets/images/Group.svg";
 import menuimg8 from "../assets/images/Vector.svg";
 import menuimg9 from "../assets/images/Vector (1).svg";
 import Footer from "../components/Footer";
-
-
-
-
+import menucardImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
 
 function MenuPage() {
+
+  const menucarditem = [
+    {
+      image: menucardImg1,
+      price: "₦3000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦4000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦5000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦6000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+  ]
+
   return (
     <div>
       <div className="menu_top_desc">
@@ -32,14 +63,15 @@ function MenuPage() {
 
       <div className="menu_section1">
         <div className="menu_grid">
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
-          <MenuCard />
+          {menucarditem.map((item, index) => (
+            <MenuCard
+              key={index}
+              image={item.image}
+              price={item.price}
+              product={item.product}
+              title={item.title}
+            />
+          ))}
         </div>
       </div>
 
@@ -73,7 +105,7 @@ function MenuPage() {
           </div>
         </div>
       </div>
-<Footer/>
+      <Footer />
     </div>
   )
 }

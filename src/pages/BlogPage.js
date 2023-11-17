@@ -2,13 +2,52 @@ import "../styles/BlogPage.css";
 import menuimg1 from "../assets/images/1.svg";
 import BlogCard from "../components/BlogCard";
 import Footer from "../components/Footer";
-
-
-
-
-
+import cardImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
 
 function BlogPage() {
+  const blogcarditems = [
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    },
+    {
+      image: cardImg1,
+      date: "18 Dec, 2023",
+      title: " How to prepare a delicious gluten free sushi"
+    }
+  ]
+
   return (
     <div className="blog">
       <div className="blog_top_desc">
@@ -17,19 +56,19 @@ function BlogPage() {
       </div>
       <div className="blog_section1">
         <div className="blog_grid">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {blogcarditems.map((item, index) => (
+            <BlogCard
+              key={index} 
+              image={item.image}
+              date={item.date}
+              title={item.title}
+            />
+          ))}
         </div>
       </div>
       <Footer />
     </div>
-  )
+  );
 }
 
 export default BlogPage;

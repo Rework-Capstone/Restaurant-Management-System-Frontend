@@ -15,6 +15,11 @@ function App() {
       <Routes>
         <Route path="/" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/menu" element={<MenuPage/>} />
+        <Route path="/blog" element={<BlogPage/>} />
+        <Route path="/blogd/:id" element={<BlogDetails/>} />
+        <Route path="/book" element={<BookATable/>} />
+        <Route path="/contact" element={<ContactUsPage/>} />
       </Routes>
     </BrowserRouter>
   );
