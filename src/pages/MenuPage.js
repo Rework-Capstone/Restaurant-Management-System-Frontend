@@ -45,6 +45,73 @@ function MenuPage() {
       product: "Fried Eggs",
       title: "Made With eggs, lettuce, salt, oil and other ingredients."
     },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    {
+      image: menucardImg1,
+      price: "₦7000",
+      product: "Fried Eggs",
+      title: "Made With eggs, lettuce, salt, oil and other ingredients."
+    },
+    
   ]
 
   return (
