@@ -6,11 +6,12 @@
 
 .home-hero-container{
     padding-top: 100px;
+    margin-bottom: 30px;
 }
 
 .home-hero{
     background-image: url(../assets/images/homeHero.svg);
-    height: 800px;
+    height: 850px;
     /* width: 100%; */
     background-repeat: no-repeat;
     background-size: cover;

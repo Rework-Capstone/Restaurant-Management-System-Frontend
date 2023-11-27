@@ -1,4 +1,5 @@
 import "./App.css";
+import DataProvoder from "./components/Context/context";
 import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SignUp from "./pages/SignUp";
@@ -13,6 +14,7 @@ import CheckOutPage from "./pages/CheckOutPage";
 
 function App() {
   return (
+    <DataProvoder>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SignUp/>} />
@@ -26,6 +28,8 @@ function App() {
         <Route path="/CheckOutPage" element={<CheckOutPage/>} />
       </Routes>
     </BrowserRouter>
+    </DataProvoder>
+
   );
 }
 

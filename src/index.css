@@ -20,7 +20,8 @@ header h1, header h2, header h3, header h3, header h4, header h5, header h6{
   --primary-color: #AD343E;
   --secondary-color: #DBDFD0;
   --primary-dark: #474958;
-  --primary-grey: #E8E9ED;
+  --primary-grey: 
+  #f3f3f0;
   --primary-light: #F8F8FA;
 
 }
