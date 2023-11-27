@@ -1,9 +1,17 @@
 import "../styles/MenuCard.css";
 import menuImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
-
-
+import SingleFoodModal from "../pages/SingleFoodModal";
+import { useState } from "react";
 
 function MenuCard(props) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  }
+
 
   const {
     image,
@@ -14,7 +22,7 @@ function MenuCard(props) {
 
   return (
     <div>
-      <div className="menuCard_main">
+      <div className="menuCard_main" onClick={handleOpenModal}>
         <div className="menuCard_img">
           <img src={image} alt="" />
         </div>
@@ -27,6 +35,7 @@ function MenuCard(props) {
         </div>
       </div>
 
+      <SingleFoodModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </div>
   );
 }

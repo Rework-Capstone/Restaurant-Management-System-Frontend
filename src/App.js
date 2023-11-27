@@ -9,7 +9,8 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import BookATable from "./pages/BookATable";
 import ContactUsPage from "./pages/ContactUsPage";
-import TableSetting from "./pages/Table";
+import SingleFoodModal from "./pages/SingleFoodModal";
+import CheckOutPage from "./pages/CheckOutPage";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         <Route path="/blogd/:id" element={<BlogDetails/>} />
         <Route path="/book" element={<BookATable/>} />
         <Route path="/contact" element={<ContactUsPage/>} />
-        <Route path='/table' element={<TableSetting/>}/>
+        <Route path="/Single" element={<SingleFoodModal/>} />
+        <Route path="/CheckOutPage" element={<CheckOutPage/>} />
       </Routes>
     </BrowserRouter>
     </DataProvoder>
