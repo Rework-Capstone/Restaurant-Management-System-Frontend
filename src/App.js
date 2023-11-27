@@ -9,6 +9,7 @@ import BlogPage from "./pages/BlogPage";
 import BlogDetails from "./pages/BlogDetails";
 import BookATable from "./pages/BookATable";
 import ContactUsPage from "./pages/ContactUsPage";
+import TableSetting from "./pages/Table";
 
 function App() {
   return (
@@ -17,15 +18,16 @@ function App() {
       <Routes>
         <Route path="/" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/home" element={<HomePage/>} />
         <Route path="/menu" element={<MenuPage/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/blogd/:id" element={<BlogDetails/>} />
         <Route path="/book" element={<BookATable/>} />
         <Route path="/contact" element={<ContactUsPage/>} />
+        <Route path='/table' element={<TableSetting/>}/>
       </Routes>
     </BrowserRouter>
     </DataProvoder>
-
   );
 }
 

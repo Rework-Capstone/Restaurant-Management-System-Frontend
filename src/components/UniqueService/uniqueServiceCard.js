@@ -53,5 +53,6 @@ export default function UniqueServiceCard(){
                     ))
                 }
         </div>
-    )}
+    )
+  }
 
