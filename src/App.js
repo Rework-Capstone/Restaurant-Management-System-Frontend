@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<SignUp/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/home" element={<HomePage/>} />
         <Route path="/menu" element={<MenuPage/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/blogd/:id" element={<BlogDetails/>} />
@@ -29,7 +30,6 @@ function App() {
       </Routes>
     </BrowserRouter>
     </DataProvoder>
-
   );
 }
 
