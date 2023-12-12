@@ -1,8 +1,10 @@
 import "../styles/BlogPage.css";
-import menuimg1 from "../assets/images/1.svg";
+// import menuimg1 from "../assets/images/1.svg";
 import BlogCard from "../components/BlogCard";
 import Footer from "../components/Footer";
 import cardImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
+import axios from "axios";
+
 
 function BlogPage() {
   const blogcarditems = [
@@ -47,6 +49,18 @@ function BlogPage() {
       title: " How to prepare a delicious gluten free sushi"
     }
   ]
+
+  const endpointUrl = 'http://localhost:4300/api/v1/food';
+
+  axios.get(endpointUrl)
+    .then(response => {
+      const data = response.data;
+      console.log('Data:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  
 
   return (
     <div className="blog">
