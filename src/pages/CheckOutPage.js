@@ -1,138 +1,53 @@
-import React, { useState, useEffect } from "react";
-import "../styles/CheckOutPage.css";
-import image1 from "../assets/images/pexels-daniela-constantini-5591664 1.png";
-import logo from "../assets/icons/logo.svg"
+// import React, { useState, useEffect } from "react"; 
+import { Link } from "react-router-dom";
+import { IoChevronBackOutline } from "react-icons/io5";
+import "../styles/CheckOutPageStyles.css";
 
 
 function CheckOutPage() {
 
   return (
-    <>
-      <div className="checkout">
-        <div className='checkout_container'>
-          <div className='window'>
-            <div className='order-info'>
-              <div className='order-info-content'>
-                <h2>Order Summary</h2>
-                <div className='line'></div>
-                <table className='order-table'>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          src={image1}
-                          alt='Product 1'
-                          className='full-width'
-                        />
-                      </td>
-                      <td>
-                        <span className='thin'>Fried Egg</span>
-                        <br />
-                        <span className='thin small'>Made With eggs, lettuce, salt, oil and other ingredients.</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className='price'>$99.95</div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className='line'></div>
-                <table className='order-table'>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          src={image1}
-                          alt='Product 1'
-                          className='full-width'
-                        />
-                      </td>
-                      <td>
-                        <span className='thin'>Fried Egg</span>
-                        <br />
-                        <span className='thin small'>Made With eggs, lettuce, salt, oil and other ingredients.</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className='price'>$99.95</div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className='line'></div>
-                <table className='order-table'>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <img
-                          src={image1}
-                          alt='Product 1'
-                          className='full-width'
-                        />
-                      </td>
-                      <td>
-                        <span className='thin'>Fried Egg</span>
-                        <br />
-                        <span className='thin small'>Made With eggs, lettuce, salt, oil and other ingredients.</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div className='price'>$99.95</div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-                <div className='line'></div>
-                <div className='total'>
-                  <span className="vat_delivery">
-                    <div className='thin dense'>VAT 19%</div>
-                    <div className='thin dense'>Delivery</div>
-                    TOTAL
-                  </span>
-                  <span className="total_price">
-                    <div className='thin dense'>$0.00</div>
-                    <div className='thin dense'>$0.00</div>
-                    $0.00
-                  </span>
+    <div className="CheckOutPage">
+      <div className="Container">
+        <div className="Heading">
+          <Link className="BackToMenu">
+            <IoChevronBackOutline />
+            <p>Back</p>
+          </Link>
+          <h3>
+            <strong>CHECKOUT</strong>
+          </h3>
+        </div>
+        <div className="CheckOutDetails">
+          <div className="UserDetails">
+            <div className="Contact-Information">
+              <h6><strong>Contact Information</strong></h6>
+              <div>
+                <input type="text" placeholder="Name*" />
+                <input type="number" placeholder="Phone*" />
+              </div>
+            </div>
+            <div className="User-Order-Type">
+              <h6><strong>Order Type</strong></h6>
+              <div className="Type">
+                <div className="checkbox-container">
+                  <input type="checkbox" id="delivery" className="checkbox-custom-input" />
+                  <label htmlFor="delivery" className="checkbox-custom"></label>
+                  <label htmlFor="delivery">Delivery</label>
+                </div>
+                <div className="checkbox-container">
+                  <input type="checkbox" id="pickup" className="checkbox-custom-input" />
+                  <label htmlFor="pickup" className="checkbox-custom"></label>
+                  <label htmlFor="pickup">Pickup</label>
                 </div>
               </div>
-            </div>
-            <div className='credit-info'>
-              <div className='credit-info-content'>
-                <img
-                  src={logo}
-                  alt='Visa Card'
-                  height='80'
-                  className='credit-card-image'
-                  id='credit-card-image'
-                />
-                <div>Card Number</div>
-                <input type="number" className='input-field'></input>
-                <div>Card Holder</div>
-                <input type="number" className='input-field'></input>
-                <table className='half-input-table'>
-                  <tr>
-                    <td>
-                      Expires
-                      <input type="number" className='input-field'></input>
-                    </td>
-                    <td>
-                      CVC
-                      <input type="number" className='input-field'></input>
-                    </td>
-                  </tr>
-                </table>
-                <button className='pay-btn'>Checkout</button>
-              </div>
+
             </div>
           </div>
+          <div className="ProductSum"></div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

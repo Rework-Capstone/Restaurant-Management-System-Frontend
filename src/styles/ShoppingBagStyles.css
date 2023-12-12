@@ -1,0 +1,332 @@
+.ShoppingBag {
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ShoppingBag .Container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ShoppingBag .Container .Heading {
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background-color: white;
+}
+
+.ShoppingBag .Container .Heading .BackToMenu{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.ShoppingBag .Container .BackToMenu svg {
+    margin-right: 2px;
+}
+
+.ShoppingBag .Container .BackToMenu p {
+    margin: 0;
+}
+
+.ShoppingBag .Container .Heading h3{
+    display: flex;
+    align-items: center;
+}
+
+.ShoppingBag .Container .Product-List{
+     width: 100%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: 73% 25%;
+     gap: 20px;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Titles{
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 55% 19% 12.5%;
+    gap: 15px;
+    padding-top: 5px;
+}
+
+/* .ShoppingBag .Container .Product-List .Products-In-Bag .Titles p:nth-of-type(1){
+    background-color: blanchedalmond;
+} */
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Titles p:nth-of-type(2){
+    text-align: center;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Titles p:nth-of-type(3){
+    text-align: center;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag hr:nth-of-type(1){
+    margin: 0;
+    background-color: black;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 55% 20% 13% 7%;
+    gap: 10px;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Preview{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Preview .Image{
+    width: 20%;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Preview .Image img{
+    width: 100%;
+    height: 100%;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Quantity{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Quantity svg{
+    height: 20px;
+    width: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Quantity p{
+    padding-top: 15px;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.ShoppingBag .Container .Product-List .Products-In-Bag .Product  .Cancel{
+    text-align: right;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 22px;
+}
+
+.ShoppingBag .Container .Product-List .Checkout{
+    width: 100%;
+    height: fit-content;
+    background-color: whitesmoke;
+    padding: 35px;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Promo-Code{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Promo-Code input{
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline-color: transparent;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Promo-Code button{
+    width: 80px;
+    height: 40px;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 1.5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Fees{
+    display: block;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Fees div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ShoppingBag .Container .Product-List .Checkout .Checkout-Button button{
+    width: 100%;
+    color: black;
+    background-color: yellow;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ShoppingBag .Container .Related-Products {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.ShoppingBag .Container .Related-Products .Control {
+    background-color: white;
+    min-height: 300px;
+}
+
+.ShoppingBag .Container .Related-Products .Control h3 {
+    font-weight: 550;
+    font-size: 30px;
+}
+
+.ShoppingBag .Container .Related-Products .Control .Room {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ShoppingBag .Container .Related-Products .Control .Room button {
+    height: 100%;
+    width: 100%;
+    color: black;
+    background-color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(229, 229, 6);
+    border-radius: 5px;
+    font-weight: 750;
+}
+
+.ShoppingBag .Container .Related-Products .Control .Room button:nth-of-type(1) {
+    border-right-color: transparent;
+}
+
+.ShoppingBag .Container .Related-Products .Control .Room button:nth-of-type(2) {
+    border-left-color: transparent;
+    margin-left: 3px;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 0;
+    /* box-shadow: inset 10px 0px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 0px 10px -10px rgba(0, 0, 0, 0.3); */
+    box-shadow: inset 25px 0px 25px -20px rgba(0, 0, 0, 0.2), inset -20px 0px 20px -15px rgba(0, 0, 0, 0.2);
+}
+
+.ShoppingBag .Container .Related-Products .Carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card {
+    height: 100%;
+    min-width: 270px;
+    background-color: rgb(237, 232, 232);
+    border-radius: 10px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    padding-bottom: 20px;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card:first-child::before {
+    left: 0;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card:last-child::after {
+    right: 0;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card .Card-Image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    object-fit: contain;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card .Card-Title {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card div {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card div p {
+    color: red;
+    cursor: pointer;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card div .Bag-Icon {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    font-size: 17px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.ShoppingBag .Container .Related-Products .Carousel .Card div .Bag-Icon:hover {
+    cursor: pointer;
+    background-color: beige;
+}
