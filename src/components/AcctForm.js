@@ -173,7 +173,7 @@ function AcctForm(props) {
               </div>
             </form>
             <div className="cu-onboarding__footer-link ">
-              <a href="#" className="ng-star-inserted">
+              <a href="/" className="ng-star-inserted">
                 or signup with SSO
               </a>
             </div>
@@ -182,7 +182,7 @@ function AcctForm(props) {
               <div className="cu-onboarding__footnote">
                 By clicking the button above, you agree to our{" "}
                 <a
-                  href="#"
+                  href="/"
                   target="_blank"
                   className="cu-onboarding__footnote-link"
                 >

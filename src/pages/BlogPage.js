@@ -1,5 +1,5 @@
 import "../styles/BlogPage.css";
-import menuimg1 from "../assets/images/1.svg";
+// import menuimg1 from "../assets/images/1.svg";
 import BlogCard from "../components/BlogCard";
 import Footer from "../components/Footer";
 import cardImg1 from "../assets/images/pexels-daniela-constantini-5591664 1.png"
