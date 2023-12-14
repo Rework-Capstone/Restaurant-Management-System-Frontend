@@ -12,7 +12,7 @@ function DataProvoder(props){
         if(localData){
             setData(localData)
         }
-    }, [])
+    }, [localData])
 
     return(
         <DataContext.Provider value={{data, setData}}>

@@ -1,7 +1,8 @@
 .CheckOutPage {
   width: 100%;
-  height: 100%;
+  height: 99.9vh;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #F4F5F9;
 }
 
 .CheckOutPage .Container {
@@ -16,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2px;
-  background-color: white;
+  background-color: #F4F5F9;
 }
 
 .CheckOutPage .Container .Heading .BackToMenu{
@@ -46,7 +47,6 @@
   display: grid;
   grid-template-columns: 60% 25%;
   gap: 20px;
-  background-color: #F4F5F9;
 }
 
 .CheckOutPage .Container .CheckOutDetails .UserDetails{
@@ -55,12 +55,19 @@
   background-color: blue;
   padding: 30px;
   background-color: #E5EDF0;
+  margin-bottom: 70px;
+  border-radius: 10px;
 }
 
 .CheckOutPage .Container .CheckOutDetails .UserDetails .Contact-Information{
   width: 100%;
   height: 100%;
   margin-bottom: 30px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Contact-Information h6{
+  font-weight: 750;
+  font-size: 20px;
 }
 
 .CheckOutPage .Container .CheckOutDetails .UserDetails .Contact-Information div{
@@ -86,7 +93,6 @@
   width: 100%;
   height: 100%;
   margin-bottom: 30px;
-  background-color: red;
 }
 
 .CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type{
@@ -94,6 +100,7 @@
   align-items: center;
   gap: 20px;
   width: 100%;
+  padding-top: 10px;
 }
 
 .CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type div input{
@@ -114,7 +121,7 @@
 }
 
 /* Update the styling for the checkboxes */
-.checkbox-custom {
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom {
   position: relative;
   display: inline-block;
   width: 20px;
@@ -123,9 +130,10 @@
   border: 1px solid #000;
   cursor: pointer;
   background-color: transparent;
+  margin-right: 5px;
 }
 
-.checkbox-custom::after {
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom::after {
   content: '';
   display: block;
   width: 16px;
@@ -140,6 +148,328 @@
 }
 
 /* Add checked style */
-.checkbox-custom-input:checked + .checkbox-custom::after {
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom-input:checked + .checkbox-custom::after {
   background-color: #000; /* Change the color of the inner circle when checked */
+}
+
+/* Hide native checkboxes */
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Logic to allow only one checkbox to be checked */
+.checkbox-container {
+  position: relative;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom-input:checked + .checkbox-custom::after {
+  background-color: #000; /* Change the color of the inner circle when checked */
+}
+
+/* Uncheck other checkboxes when one is checked */
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom-input:checked + .checkbox-custom::after {
+  background-color: #000; /* Change the color of the inner circle when checked */
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Order-Type .Type .checkbox-container .checkbox-custom-input:checked ~ .checkbox-container input[type="checkbox"]:not(:checked) {
+  display: none;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address{
+  width: 100%;
+  height: 100%;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address select{
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline-style: none;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: cream;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address .Address{
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline-style: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address .Flat{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address .Flat input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  outline-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .Users-Address textarea{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  outline-style: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type{
+  margin-top: 30px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .Type{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .Type .checkbox-custom-input {
+  display: none;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .Type .checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .Type .checkbox-custom::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+  background-color: #000;
+  opacity: 0;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .Type .checkbox-custom-input:checked + .checkbox-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Delivery-Type .User-Select-Local-Time{
+  height: 40px;
+  width: 100%;
+  outline-style: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+} 
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method{
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type .checkbox-custom-input {
+  display: none;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type .checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 10px;
+  background: #fff;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type .checkbox-custom::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+  background-color: #000;
+  opacity: 0;
+}
+
+.CheckOutPage .Container .CheckOutDetails .UserDetails .User-Payment-Method .Type .checkbox-custom-input:checked + .checkbox-custom::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum{
+  background-color: #E5EDF0;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Title{
+  font-weight: 750;
+  font-size: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Grid{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  gap: 30px; 
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Grid::-webkit-scrollbar {
+  display: none;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Grid .Item{
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  flex: 0 0 calc(33.33% - 20px); 
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Grid .Item .Products-Images{
+  width: 100%;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Grid .Item p{
+  font-weight: 700;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Subtotal{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Subtotal h6{
+  font-weight: 700;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Subtotal p{
+  margin: 0;
+  font-weight: 650;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Delivery-Fee{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Delivery-Fee h6{
+  font-weight: 700;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Products-Delivery-Fee p{
+  margin: 0;
+  font-weight: 650;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Tax-Fees{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Tax-Fees h6{
+  font-weight: 700;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Tax-Fees p{
+  margin: 0;
+  font-weight: 650;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Total{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Total h4{
+  font-weight: 550;
+}
+
+.CheckOutPage .Container .CheckOutDetails .ProductSum .Product-Total p{
+  margin: 0;
+  font-weight: 650;
+}
+
+.CheckOutPage .Container .CheckOutDetails button{
+  height: 50px;
+  width: 100%;
+  margin: 20px auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color: yellow;
 }
