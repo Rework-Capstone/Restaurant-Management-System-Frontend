@@ -35,7 +35,7 @@ function Bag() {
         <div className="ShoppingBag">
             <div className="Container">
                 <div className="Heading">
-                    <Link className="BackToMenu">
+                    <Link to="/MealCategory" className="BackToMenu">
                         <IoChevronBackOutline />
                         <p>Back</p>
                     </Link>
